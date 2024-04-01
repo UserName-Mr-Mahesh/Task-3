@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+.todo-list {
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    background-color: teal;
+    padding: 25px 40px;
+    color: orange;
+    height: 93vh;
+}
+
+.add-todo-container {
+    margin: 20px 0px;
+}
+
+#newTodo {
+    padding: 5px;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid orange;
+    margin-bottom: 5px;
+    color: white;
+}
+.todo:hover {
+    background-color: white;
+    color: teal;
+}
+
+.remove-todo,.edit-todo {
+    cursor: pointer;
+    color: red;
+    display: none;
+    margin-left: 10px;
+    border: none;
+    padding: 2px 5px;
+    background: transparent
+}
+/* .edit-todo {
+    cursor: pointer;
+    color: red;
+    display: none;
+} */
+
+.todo:hover .remove-todo, .todo:hover .edit-todo{
+    display: inline-block;
+}
+button {
+    padding: 5px;
+}
+
+.edit{
+    padding: 5px;
+    border-collapse: collapse;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 0;
+        background-color: teal;
+    }
+    .todo-list {
+        font-size: 15px;
+        max-width: 100%;
+        height: auto;
+        padding: 25px 20px;
+    }
+    input {
+        width: 60%;
+    }
+    #todos {
+        font-size: 13px;
+    }
+        
+}
